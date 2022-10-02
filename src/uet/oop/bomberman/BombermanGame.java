@@ -8,6 +8,7 @@ import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.stage.Stage;
 import uet.oop.bomberman.bomber.Bomber;
+import uet.oop.bomberman.entities.Bomber;
 import uet.oop.bomberman.entities.Animal.Animal;
 import uet.oop.bomberman.entities.Block.Brick;
 import uet.oop.bomberman.entities.Block.Portal;
@@ -38,7 +39,11 @@ public class BombermanGame extends Application {
     public static int[][] objIdx;
     public static int[][] listIsKilled;
 
-    public static Animal player;
+<<<<<<< HEAD
+//    public static Animal player;
+=======
+    public static Bomber player;
+>>>>>>> mtt
 
     private GraphicsContext gc;
     private Canvas canvas;
@@ -65,6 +70,30 @@ public class BombermanGame extends Application {
         // Tao scene
         Scene scene = new Scene(root);
 
+<<<<<<< HEAD
+=======
+        scene.setOnKeyPressed(event -> {
+            switch (event.getCode()) {
+                case UP:
+                    player.moveup();
+                    break;
+                case DOWN:
+                    player.movedown();
+                    break;
+                case RIGHT:
+                    player.moveright();
+                    break;
+                case LEFT:
+                    player.moveleft();
+                    break;
+                case SPACE:
+                    break;
+                case P:
+                    break;
+            }
+        });
+
+>>>>>>> mtt
         // Them scene vao stage
         stage.setScene(scene);
         stage.show();
@@ -80,8 +109,13 @@ public class BombermanGame extends Application {
 
         createMap();
 
+<<<<<<< HEAD
         Entity bomberman = new Bomber(1, 1, Sprite.player_right.getFxImage());
         entities.add(bomberman);
+=======
+        player = new Bomber(1, 1, Sprite.player_right.getFxImage());
+        entities.add(player);
+>>>>>>> mtt
     }
 
     public void createMap() {
