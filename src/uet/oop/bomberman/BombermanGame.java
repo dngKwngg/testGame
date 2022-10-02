@@ -65,6 +65,32 @@ public class BombermanGame extends Application {
         // Tao scene
         Scene scene = new Scene(root);
 
+<<<<<<< Updated upstream
+=======
+
+        scene.setOnKeyPressed(event -> {
+            switch (event.getCode()) {
+                case UP:
+                    player.moveup();
+                    break;
+                case DOWN:
+                    player.movedown();
+                    break;
+                case RIGHT:
+                    player.moveright();
+                    break;
+                case LEFT:
+                    player.moveleft();
+                    break;
+                case SPACE:
+                    break;
+                case P:
+                    break;
+            }
+        });
+
+
+>>>>>>> Stashed changes
         // Them scene vao stage
         stage.setScene(scene);
         stage.show();
