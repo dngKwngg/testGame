@@ -8,7 +8,6 @@ import javafx.scene.canvas.Canvas;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.stage.Stage;
 import uet.oop.bomberman.bomber.Bomber;
-import uet.oop.bomberman.entities.Bomber;
 import uet.oop.bomberman.entities.Animal.Animal;
 import uet.oop.bomberman.entities.Block.Brick;
 import uet.oop.bomberman.entities.Block.Portal;
@@ -70,6 +69,32 @@ public class BombermanGame extends Application {
         // Tao scene
         Scene scene = new Scene(root);
 
+<<<<<<< Updated upstream
+=======
+
+        scene.setOnKeyPressed(event -> {
+            switch (event.getCode()) {
+                case UP:
+                    player.moveup();
+                    break;
+                case DOWN:
+                    player.movedown();
+                    break;
+                case RIGHT:
+                    player.moveright();
+                    break;
+                case LEFT:
+                    player.moveleft();
+                    break;
+                case SPACE:
+                    break;
+                case P:
+                    break;
+            }
+        });
+
+
+>>>>>>> Stashed changes
 <<<<<<< HEAD
 =======
         scene.setOnKeyPressed(event -> {
@@ -109,7 +134,6 @@ public class BombermanGame extends Application {
 
         createMap();
 
-<<<<<<< HEAD
         Entity bomberman = new Bomber(1, 1, Sprite.player_right.getFxImage());
         entities.add(bomberman);
 =======

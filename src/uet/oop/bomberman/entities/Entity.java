@@ -31,9 +31,9 @@ public abstract class Entity {
         return x;
     }
 
-    public int getY() {
-        return y;
-    }
+//    public int getY() {
+//        return y;
+//    }
 
     public void setX(int x) {
         this.x = x;
