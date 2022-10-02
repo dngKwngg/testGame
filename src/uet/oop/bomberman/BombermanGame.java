@@ -69,9 +69,34 @@ public class BombermanGame extends Application {
         // Tao scene
         Scene scene = new Scene(root);
 
-<<<<<<< Updated upstream
-=======
+//<<<<<<< Updated upstream
+//=======
+//
+//        scene.setOnKeyPressed(event -> {
+//            switch (event.getCode()) {
+//                case UP:
+//                    player.moveup();
+//                    break;
+//                case DOWN:
+//                    player.movedown();
+//                    break;
+//                case RIGHT:
+//                    player.moveright();
+//                    break;
+//                case LEFT:
+//                    player.moveleft();
+//                    break;
+//                case SPACE:
+//                    break;
+//                case P:
+//                    break;
+//            }
+//        });
 
+
+//>>>>>>> Stashed changes
+//<<<<<<< HEAD
+//=======
         scene.setOnKeyPressed(event -> {
             switch (event.getCode()) {
                 case UP:
@@ -93,32 +118,7 @@ public class BombermanGame extends Application {
             }
         });
 
-
->>>>>>> Stashed changes
-<<<<<<< HEAD
-=======
-        scene.setOnKeyPressed(event -> {
-            switch (event.getCode()) {
-                case UP:
-                    player.moveup();
-                    break;
-                case DOWN:
-                    player.movedown();
-                    break;
-                case RIGHT:
-                    player.moveright();
-                    break;
-                case LEFT:
-                    player.moveleft();
-                    break;
-                case SPACE:
-                    break;
-                case P:
-                    break;
-            }
-        });
-
->>>>>>> mtt
+//>>>>>>> mtt
         // Them scene vao stage
         stage.setScene(scene);
         stage.show();
@@ -136,10 +136,10 @@ public class BombermanGame extends Application {
 
         Entity bomberman = new Bomber(1, 1, Sprite.player_right.getFxImage());
         entities.add(bomberman);
-=======
+//=======
         player = new Bomber(1, 1, Sprite.player_right.getFxImage());
         entities.add(player);
->>>>>>> mtt
+//>>>>>>> mtt
     }
 
     public void createMap() {
